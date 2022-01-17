@@ -1,25 +1,13 @@
-variable "rg_name" {
-  type = string
+variable "saname" {
+    type = string
+    description = "Name of storage account"
 }
-
-variable "region" {
-  type = string
+variable "rgname" {
+    type = string
+    description = "Name of resource group"
 }
-
-variable "sa_name" {
-  type = string
-}
-
-variable "environment" {
-  type = string
-}
-
-variable "account_replication_type" {
-  type    = string
-  default = "GRS"
-}
-
-variable "account_tier" {
-  type    = string
-  default = "Standard"
+variable "location" {
+    type = string
+    description = "Azure location of storage account environment"
+    default = "UKSouth"
 }
